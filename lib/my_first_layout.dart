@@ -69,9 +69,10 @@ class _MyFirstLayoutState extends State<MyFirstLayout> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("My Fisrt Layout"),
+        title: const Text("My Fisrt Layout"),
         actions: [
-          Container(margin: EdgeInsets.all(20), child: Icon(Icons.abc))
+          Container(
+              margin: const EdgeInsets.all(20), child: const Icon(Icons.abc))
         ],
       ),
       body: ListView.builder(
@@ -83,11 +84,11 @@ class _MyFirstLayoutState extends State<MyFirstLayout> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text("Try Snackbar"),
           ),
         ),
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
