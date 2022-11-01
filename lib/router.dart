@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:week1/detail_screen.dart';
 import 'package:week1/my_first_layout.dart';
 import 'package:week1/profile.dart';
+import 'package:week1/trial_layout_1.dart';
 
 final router = GoRouter(
   routes: [
@@ -23,6 +24,10 @@ final router = GoRouter(
           ),
         );
       },
-    )
+    ),
+    GoRoute(
+      path: '/trial_layout_1',
+      builder: (context, state) => const TrialLayout1(),
+    ),
   ],
 );

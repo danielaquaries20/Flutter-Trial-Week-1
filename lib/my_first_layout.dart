@@ -83,11 +83,14 @@ class _MyFirstLayoutState extends State<MyFirstLayout> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Try Snackbar"),
-          ),
-        ),
+        onPressed: () => {
+          // ScaffoldMessenger.of(context).showSnackBar(
+          //   const SnackBar(
+          //     content: Text("Try Snackbar"),
+          //   ),
+          // ),
+          context.push('/trial_layout_1')
+        },
         child: const Icon(Icons.add),
       ),
     );
